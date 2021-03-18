@@ -2057,6 +2057,7 @@ $jscomp.polyfill = function (e, r, p, m) {
           var pTop = $body.css('padding-top');
           var pBottom = $body.css('padding-bottom');
           var finalHeight = $body[0].scrollHeight;
+          console.log(finalHeight);
           $body.css({
             paddingTop: 0,
             paddingBottom: 0
@@ -2074,7 +2075,7 @@ $jscomp.polyfill = function (e, r, p, m) {
                 overflow: '',
                 paddingTop: '',
                 paddingBottom: '',
-                height: ''
+                // height: ''
               });
 
               // onOpenEnd callback
@@ -10839,13 +10840,13 @@ $jscomp.polyfill = function (e, r, p, m) {
             // If image won't trigger the load event
             var imageHeight = firstImage.height();
             if (imageHeight > 0) {
-              this.$el.css('height', imageHeight + 'px');
+              this.$el.css('height', imageHeight + imageHeight/2 + 50 + 'px');
             } else {
               // If image still has no height, use the natural dimensions to calculate
               var naturalWidth = firstImage[0].naturalWidth;
               var naturalHeight = firstImage[0].naturalHeight;
               var adjustedHeight = this.$el.width() / naturalWidth * naturalHeight;
-              this.$el.css('height', adjustedHeight + 'px');
+              this.$el.css('height', adjustedHeight +'px');
             }
           } else {
             // Get height when image is loaded normally
@@ -12372,3 +12373,5 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   Range.init($('input[type=range]'));
 })(cash, M.anime);
+
+

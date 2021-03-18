@@ -1,21 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" /> -->
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Valentin Mornet</title>
 </head>
+
 <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper" style="background-color: #2196F3;">
+                <a href="#" class="brand-logo center">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <h1>Test</h1>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
 
+    </div>
 
-     <!--JavaScript at end of body for optimized loading-->
-     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="section">
+                <div class="col s6">
+                    <div class="col s5">
+                        <img src="img/circle-cropped_auto_x4.png" alt="" class="circle responsive-img center-align"
+                            width="500">
+                    </div>
+                    <div class=" col s6">
+                        <h2 class="center-align">Mornet Valentin</h2>
+                    </div>
+
+                </div>
+                <div class="col s6">
+                    <div class="center-align text-in-bloc blue">
+                        <a class="waves-effect waves-light btn-large"><i class="material-icons left">badge</i>CV</a>
+                        <a class="waves-effect waves-light btn-large blue"><i
+                                class="material-icons left">games</i>Itchio</a>
+                        <a class="waves-effect waves-light btn-large"><i
+                                class="material-icons left">local_post_office</i>Mail</a>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: #2196F3;">
+        <div class="container">
+            &nbsp;
+            <h2 class="center-align white-text"><b>ABOUT ME</b></h2>
+            <div class="col s5">
+                <img src="img/15937140_970199513124436_4264643572006452078_o.jpg" alt=""
+                    class="responsive-img center-align" style="padding-top: 4.5%; padding-bottom: 4.5%;">
+                &nbsp;
+            </div>
+            <div class="col s7">
+                <h5 class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum
+                    facilisis massa
+                    rhoncus porttitor.
+                    Proin vel rhoncus ligula. Curabitur eget ultricies sapien, vel iaculis ante.
+                    Quisque imperdiet ex interdum, semper diam faucibus, accumsan tellus. Proin vehicula tortor
+                    quis libero volutpat commodo. Phasellus lorem mi,
+                    commodo in sapien eget, tincidunt convallis ante. Nulla facilisi. Cras eget ligula bibendum
+                    risus volutpat tincidunt.
+                    Curabitur consectetur ipsum neque, id iaculis purus malesuada eu. Praesent ut lectus mi.
+                    Suspendisse eu orci faucibus, auctor neque sit amet, facilisis massa. Phasellus vel metus
+                    viverra, commodo mauris et, rutrum erat. Nunc venenatis elementum malesuada. Donec sodales
+                    at mi in consequat. In vehicula finibus elit at mattis. </h5>
+                <!-- Promo Content 2 goes here -->
+                &nbsp;
+            </div>
+
+        </div>
+    </div>
+    <div class="row white">
+        <div class="container">
+            <h2 class="center-align box white-text blue"><b>PORTFOLIO</b></h2>
+            <div class="carousel carousel-slider center" style="height: 900px;">
+                <div class="carousel-fixed-item center">
+                </div>
+                <div class="carousel-item white white-text" href="#two!">
+                    <div class="container">
+                        &nbsp;
+                        <div class="content">
+                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="content-overlay"></div>
+                                <!-- Image doit être a 460 x 280 -->
+                                <img class="content-image responsive-img"
+                                    src="img/Project/YokaiTactics/YokaiTactics.png">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">This is a title</h3>
+                                    <p class="content-text">This is a short description</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <img class="col s4 materialboxed responsive-img" src="img/Project/YokaiTactics/Map.png">
+                            <img class="col s4 materialboxed responsive-img" src="img/Project/YokaiTactics/GameUI.PNG">
+                            <img class="col s4 materialboxed responsive-img" src="img/Project/YokaiTactics/Kitsune.PNG">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item white white-text" href="#two!">
+                    <div class="container">
+                        &nbsp;
+                        <div class="content">
+                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="content-overlay"></div>
+                                <!-- Image doit être a 460 x 280 -->
+                                <img class="content-image responsive-img" src="img/Project/Rhythm Slash/RythmSlash.PNG">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">This is a title</h3>
+                                    <p class="content-text">This is a short description</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <img class="col s4 materialboxed responsive-img"
+                                src="img/Project/Rhythm Slash/GameSlash2.PNG">
+                            <img class="col s4 materialboxed responsive-img"
+                                src="img/Project/Rhythm Slash/GameSlash.PNG">
+                            <img class="col s4 materialboxed responsive-img"
+                                src="img/Project/Rhythm Slash/background2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item white white-text" href="#two!">
+                    <div class="container">
+                        &nbsp;
+                        <div class="content">
+                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="content-overlay"></div>
+                                <!-- Image doit être a 460 x 280 -->
+                                <img class="content-image responsive-img" src="img/Project/Tron/TronMain.PNG">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">This is a title</h3>
+                                    <p class="content-text">This is a short description</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <img class="col s4 materialboxed responsive-img" src="img/Project/Tron/TronGame.PNG">
+                            <img class="col s4 materialboxed responsive-img" src="img/Project/Tron/TronSelect.PNG">
+                            <img class="col s4 materialboxed responsive-img" src="img/Project/Tron/Tron4Players.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item white white-text" href="#one!">
+                    <div class="container">
+                        &nbsp;
+                        <div class="content">
+                            <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+                                <div class="content-overlay"></div>
+                                <!-- Image doit être a 460 x 280 -->
+                                <img class="content-image responsive-img" src="img/Project/KnightTimeEvent/Main.PNG">
+                                <div class="content-details fadeIn-bottom">
+                                    <h3 class="content-title">This is a title</h3>
+                                    <p class="content-text">This is a short description</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <img class="col s4 materialboxed responsive-img"
+                                src="img/Project/KnightTimeEvent/HitQTE.PNG">
+                            <img class="col s4 materialboxed responsive-img" src="img/Project/KnightTimeEvent/Boss.PNG">
+                            <img class="col s4 materialboxed responsive-img"
+                                src="img/Project/KnightTimeEvent/WallJump.PNG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row blue">
+        <div class="container">
+            <div class="col s4 " style="padding-top: 20px;">
+                <h3 class="center-align white-text flow-text " style="padding-top: 20px;"><b>DESCRIPTION</b></h3>
+                <h4 class=" white-text text-in-bloc flow-text">En plus des projets, je me suis pris d'intérêt pour les
+                    VFX. Je
+                    produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                    pour les particules et Shadergraph/Amplify pour les shaders.</h4>
+                <h4 class="white-text text-in-bloc flow-text">Voici quelques productions faites lors de ma deuxième
+                    année. </h4>
+                <!-- Promo Content 1 goes here -->
+            </div>
+            <div class="col s7 offset-s1">
+                <h2 class="center-align white-text header"><b>OTHERS</b></h2>
+            </div>
+            <div class="col s7 offset-s1">
+                <div class="row ">
+                    <div class="col s6  ">
+                        &nbsp;
+                        <img src="img/Gifs/VFX/GifBloodExplosion.gif" alt=""
+                            class="responsive-img   rounded center-align">
+                    </div>
+                    <div class="col s6  ">
+                        &nbsp;
+                        <img src="img/Gifs/VFX/GifPortal2.gif" alt="" class="responsive-img  rounded center-align">
+                    </div>
+                    <div class="col s6  ">
+                        &nbsp;
+                        <img src="img/Gifs/VFX/GifApocalypse.gif" alt="" class="responsive-img  rounded center-align">
+                    </div>
+                    <div class="col s6  ">
+                        &nbsp;
+                        <img src="img/Gifs/VFX/GifFirefly.gif" alt="" class="responsive-img   rounded center-align">
+                    </div>
+                </div>
+            </div>
+            <h3>&nbsp; </h3>
+        </div>
+    </div>
+    <div class="row white">
+        <div class="container">
+            <h2 class="center-align box white-text blue"><b>SOFTWARES</b></h2>
+        </div>
+        <ul class="collapsible">
+            <li>
+                <div class="container85 collapsible-header">
+                    <div class="col s3 center-align">
+                        <img src="img/Softwares/pngegg.png" alt="" class="responsive-img  ">
+                    </div>
+                    <div class="col s3 center-align">
+                        <img src="img/Softwares/Unreal+Engine_logos_Unreal_Engine_Black-1125x1280-cfa228c80703d4ffbd1cc05eabd5ed380818da45.png"
+                            alt="" class="responsive-img  ">
+                    </div>
+                    <div class="col s3 center-align ">
+                        <img src="img/Softwares/imgbin_construct-html-2d-computer-graphics-apache-cordova-game-engine-png.png"
+                            alt="" class="responsive-img  ">
+                    </div>
+                    <div class="col s3 center-align ">
+                        <img src="img/Softwares/gitkraken-logo-mono-dark-sq.png" alt="" class="responsive-img ">
+                    </div>
+                </div>
+                <div class="collapsible-body">
+                    &nbsp;
+                    <div class="container85">
+                        <div class="col s3 center-align">
+                            <p class=" black-text flow-text left-align">En plus des projets, je me suis pris d'intérêt
+                                pour les
+                                VFX. Je
+                                produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                                pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                        </div>
+                        <div class="col s3 center-align">
+                            <p class=" black-text  flow-text left-align">En plus des projets, je me suis pris d'intérêt
+                                pour les
+                                VFX. Je
+                                produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                                pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                        </div>
+                        <div class="col s3 center-align ">
+                            <p class=" black-text  flow-text left-align">
+                                En plus des projets, je me suis pris d'intérêt pour les VFX. Je
+                                produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                                pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                        </div>
+                        <div class="col s3 center-align ">
+                            <p class=" black-text  flow-text left-align">En plus des projets, je me suis pris d'intérêt
+                                pour les
+                                VFX. Je
+                                produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                                pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="row white">
+        <div class="container90">
+            <h2 class="center-align box white-text blue"><b>LANGUAGES</b></h2>
+        </div>
+        <ul class="collapsible">
+            <li>
+        <div class="container90 collapsible-header">
+            <div class="col s2 center-align">
+                <img src="img/Languages/HTML.png" class="responsive-img  ">
+            </div>
+            <div class="col s2 center-align">
+                <img src="img/Languages/CSS.png" alt="" class="responsive-img  ">
+            </div>
+            <div class="col s2 center-align ">
+                <img src="img/Languages/jswebp.webp" class="responsive-img  ">
+            </div>
+            <div class="col s2 center-align ">
+                <img src="img/Languages/kisspng-c-programming-language-logo-microsoft-visual-stud-atlas-portfolio-5b899192d7c600.1628571115357423548838.png"
+                    class="responsive-img ">
+            </div>
+            <div class="col s2 center-align ">
+                <img src="img/Languages/kisspng-computer-icons-php-portable-network-graphics-logo-amp-quot-php-5b74f7e73416c7.8459139915343922952134.png"
+                    class="responsive-img ">
+            </div>
+            <div class="col s2 center-align ">
+                <img src="img/Languages/kisspng-logo-java-runtime-environment-programming-language-java-util-concurrentmodificationexception-Ömer-5b6766ab5dba25.7100170215335031473839(1).png"
+                    class="responsive-img ">
+            </div>
+        </div>
+        <div class="collapsible-body">
+            &nbsp;
+            <div class="container90">
+                <div class="col s2 center-align">
+                    <p class=" black-text flow-text left-align">En plus des projets, je me suis pris d'intérêt
+                        pour les
+                        VFX. Je
+                        produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                        pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                </div>
+                <div class="col s2 center-align">
+                    <p class=" black-text  flow-text left-align">En plus des projets, je me suis pris d'intérêt
+                        pour les
+                        VFX. Je
+                        produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                        pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                </div>
+                <div class="col s2 center-align ">
+                    <p class=" black-text  flow-text left-align">
+                        En plus des projets, je me suis pris d'intérêt pour les VFX. Je
+                        produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                        pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                </div>
+                <div class="col s2 center-align ">
+                    <p class=" black-text  flow-text left-align">En plus des projets, je me suis pris d'intérêt
+                        pour les
+                        VFX. Je
+                        produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                        pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                </div>
+                <div class="col s2 center-align ">
+                    <p class=" black-text  flow-text left-align">
+                        En plus des projets, je me suis pris d'intérêt pour les VFX. Je
+                        produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                        pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                </div>
+                <div class="col s2 center-align ">
+                    <p class=" black-text  flow-text left-align">En plus des projets, je me suis pris d'intérêt
+                        pour les
+                        VFX. Je
+                        produit principalement ces derniers sur le moteur de Unity (Shuriken)
+                        pour les particules et Shadergraph/Amplify pour les shaders.</p>
+                </div>
+            </div>
+        </div>
+        </li>
+        </ul>
+    </div>
 </body>
+
 </html>
