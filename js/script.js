@@ -32,6 +32,40 @@ for (var i = 0; i < textOverImages.length; i++) {
     }
 }
 
+
+$(function() {
+    $('#gif-hover').hide();
+    $('#hover').on("mouseover", function() {
+      $('#hover').hide();
+      $('#gif-hover').show();
+      $('#pic-hover').hide();
+    });
+  
+    $('#gif-hover').on("mouseout", function() {
+      $('#hover').show();
+      $('#gif-hover').hide();
+      $('#pic-hover').show();
+    });
+  
+    $('#gif-click').hide();
+    $('#click').click(function() {
+      $('#click').hide();
+      $('#gif-click').show();
+      $('#pic-click').hide();
+    });
+  
+    if ($('#click').data("clicked", true)) {
+      $('#gif-click').click(function() {
+        $('#click').show();
+        $('#gif-click').hide();
+        $('#pic-click').show();
+      });
+    }
+  
+  });
+
+
+
 function stopPropagation(event) {
     event.stopPropagation();
 }
@@ -74,7 +108,7 @@ function doSomethingOnClick (id){
     
     console.log(id);
     id.hidden = true;
-    /*
+    
     if(carouselOn){
         
         for(var i = 0; i < nodes.length; i++){
@@ -87,5 +121,13 @@ function doSomethingOnClick (id){
             
         }
     }
-    id.hidden = false;*/
+    id.hidden = false;
 }
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top - 90
+    }, 500);
+});
