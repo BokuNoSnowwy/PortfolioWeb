@@ -22,20 +22,26 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper" style="background-color: #2196F3;">
-                <a href="#" class="brand-logo center">Logo</a>
+                <!-- <a href="#" class="brand-logo center">Logo</a> -->
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                    <li><a href="sass.html">Contact</a></li>
+                    <li><a href="sass.html">About Me</a></li>
+                    <li><a href="sass.html">Portfolio</a></li>
+                    <li><a href="badges.html">Others</a></li>
+                    <li><a href="badges.html">Softwares</a></li>
+                    <li><a href="collapsible.html">Languages</a></li>
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
+            <li><a href="sass.html">Contact</a></li>
+            <li><a href="sass.html">About Me</a></li>
+            <li><a href="sass.html">Portfolio</a></li>
+            <li><a href="badges.html">Others</a></li>
+            <li><a href="badges.html">Softwares</a></li>
+            <li><a href="collapsible.html">Languages</a></li>
         </ul>
 
     </div>
@@ -55,13 +61,9 @@
                 </div>
                 <div class="col s6">
                     <div class="center-align text-in-bloc blue">
-                        <a class="waves-effect waves-light btn-large"><i class="material-icons left">badge</i>CV</a>
-                        <a class="waves-effect waves-light btn-large blue"><i
-                                class="material-icons left">games</i>Itchio</a>
-                        <a class="waves-effect waves-light btn-large"><i
-                                class="material-icons left">local_post_office</i>Mail</a>
-                        <div>
-                        </div>
+                        <a href="img/CV_Stage_Mornet_Valentin_Game.pdf" download="CV_ValentinMornet" class="waves-effect waves-light btn-large blue lighten-5" ><i class="material-icons left">badge</i>CV</a>
+                        <a href="https://valentinmornet.itch.io/" class="waves-effect waves-light btn-large blue lighten-5"><i class="material-icons left">games</i>Itchio</a>
+                        <a href="mailto:valentin.mornet855@gmail.com" class="waves-effect waves-light btn-large blue lighten-5"><i class="material-icons left">local_post_office</i>Mail</a>
                     </div>
                 </div>
                 <div class="divider"></div>
@@ -78,18 +80,13 @@
                 &nbsp;
             </div>
             <div class="col s7">
-                <h5 class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum
-                    facilisis massa
-                    rhoncus porttitor.
-                    Proin vel rhoncus ligula. Curabitur eget ultricies sapien, vel iaculis ante.
-                    Quisque imperdiet ex interdum, semper diam faucibus, accumsan tellus. Proin vehicula tortor
-                    quis libero volutpat commodo. Phasellus lorem mi,
-                    commodo in sapien eget, tincidunt convallis ante. Nulla facilisi. Cras eget ligula bibendum
-                    risus volutpat tincidunt.
-                    Curabitur consectetur ipsum neque, id iaculis purus malesuada eu. Praesent ut lectus mi.
-                    Suspendisse eu orci faucibus, auctor neque sit amet, facilisis massa. Phasellus vel metus
-                    viverra, commodo mauris et, rutrum erat. Nunc venenatis elementum malesuada. Donec sodales
-                    at mi in consequat. In vehicula finibus elit at mattis. </h5>
+                <h5 class="white-text flow-text">Salut à toi, Je m'appelle Valentin et je suis actuellement étudiant depuis 2 ans en Game Development à Nantes.
+                    Sortant d'un BTS SIO, je me suis dit que m'a future place devrait être dans le jeu vidéo, donc me voici !
+                </h5>
+                <h5 class="white-text flow-text">
+                    Jouant aux jeux depuis ma tendre enfance, J'ai toujours été excité à l'idée de découvrir de nouveaux jeux et de découvrir de nouvelles technologies.
+                    Je veux ainsi faire partie de ce monde en constante évolution et même y mettre ma pierre à l'édifice.  
+                    J'aime la musique, les mangas/japanimation et bien sur le jeu vidéo. Mon rêve est de travailler sur un jeu qui marquera les esprits.</h5>
                 <!-- Promo Content 2 goes here -->
                 &nbsp;
             </div>
@@ -99,7 +96,7 @@
     <div class="row white">
         <div class="container">
             <h2 class="center-align box white-text blue"><b>PORTFOLIO</b></h2>
-            <div class="carousel carousel-slider center" style="height: 900px;">
+            <div id="carouselPortfolio" class="carousel carousel-slider center" style="height: 900px;">
                 <div class="carousel-fixed-item center">
                 </div>
                 <div class="carousel-item white white-text" href="#two!">
@@ -118,9 +115,9 @@
                             </a>
                         </div>
                         <div class="row">
-                            <img class="col s4 materialboxed responsive-img" src="img/Project/YokaiTactics/Map.png">
-                            <img class="col s4 materialboxed responsive-img" src="img/Project/YokaiTactics/GameUI.PNG">
-                            <img class="col s4 materialboxed responsive-img" src="img/Project/YokaiTactics/Kitsune.PNG">
+                            <img class="col s4 materialboxed responsive-img" onclick="doSomethingOnClick(this)" src="img/Project/YokaiTactics/Map.png">
+                            <img class="col s4 materialboxed responsive-img" onclick="doSomethingOnClick(this)" src="img/Project/YokaiTactics/GameUI.PNG">
+                            <img class="col s4 materialboxed responsive-img" onclick="doSomethingOnClick(this)" src="img/Project/YokaiTactics/Kitsune.PNG">
                         </div>
                     </div>
                 </div>
@@ -262,18 +259,18 @@
                     &nbsp;
                     <div class="container85"  style="padding-left: 2.5%;">
                         <div class="col s3 left-align">
-                            <h6 class=" black-text flow-text ">En plus des projets, je me suis pris d'intérêt
-                                pour les
-                                VFX. Je
+                            <h6 class=" black-text flow-text ">
+                                En plus des projets, je me suis pris d'intérêt pour les VFX. Je
                                 produit principalement ces derniers sur le moteur de Unity (Shuriken)
-                                pour les particules et Shadergraph/Amplify pour les shaders.</h6>
+                                pour les particules et Shadergraph / Amplify pour les shaders.
+                            </h6>
                         </div>
                         <div class="col s3 left-align">
-                            <h6 class=" black-text flow-text ">En plus des projets, je me suis pris d'intérêt
-                                pour les
-                                VFX. Je
+                            <h6 class=" black-text flow-text ">
+                                En plus des projets, je me suis pris d'intérêt pour les VFX. Je
                                 produit principalement ces derniers sur le moteur de Unity (Shuriken)
-                                pour les particules et Shadergraph/Amplify pour les shaders.</h6>
+                                pour les particules et Shadergraph / Amplify pour les shaders.
+                            </h6>
                         </div>
                         <div class="col s3 left-align ">
                             <h6 class=" black-text flow-text ">
@@ -282,11 +279,11 @@
                                 pour les particules et Shadergraph/Amplify pour les shaders.</h6>
                         </div>
                         <div class="col s3 left-align ">
-                            <h6 class=" black-text flow-text">En plus des projets, je me suis pris d'intérêt
-                                pour les
-                                VFX. Je
+                            <h6 class=" black-text flow-text">
+                                En plus des projets, je me suis pris d'intérêt pour les VFX. Je
                                 produit principalement ces derniers sur le moteur de Unity (Shuriken)
-                                pour les particules et Shadergraph/Amplify pour les shaders.</h6>
+                                pour les particules et Shadergraph / Amplify pour les shaders.
+                            </h6>
                         </div>
                         &nbsp;
                     </div>
@@ -295,12 +292,12 @@
         </ul>
     </div>
     <div class="row white">
-        <div class="container90">
+        <div class="container">
             <h2 class="center-align box white-text blue"><b>LANGUAGES</b></h2>
         </div>
         <ul class="collapsible">
             <li>
-        <div class="container90 collapsible-header">
+        <div class="container80 collapsible-header"  style="padding-left: 3%;">
             <div class="col s2 center-align">
                 <img src="img/Languages/HTML.png" class="responsive-img  ">
             </div>
@@ -325,20 +322,20 @@
         </div>
         <div class="collapsible-body">
             &nbsp;
-            <div class="container90">
+            <div class="container80"  style="padding-left: 3%;">
                 <div class="col s2 left-align">
-                    <h6 class=" black-text flow-text">En plus des projets, je me suis pris d'intérêt
-                        pour les
-                        VFX. Je
+                    <h6 class=" black-text flow-text">
+                        En plus des projets, je me suis pris d'intérêt pour les VFX. Je
                         produit principalement ces derniers sur le moteur de Unity (Shuriken)
-                        pour les particules et Shadergraph / Amplify pour les shaders.</h6>
+                        pour les particules et Shadergraph / Amplify pour les shaders.
+                    </h6>
                 </div>
                 <div class="col s2 left-align">
-                    <h6 class=" black-text  flow-text ">En plus des projets, je me suis pris d'intérêt
-                        pour les
-                        VFX. Je
+                    <h6 class=" black-text  flow-text ">
+                        En plus des projets, je me suis pris d'intérêt pour les VFX. Je
                         produit principalement ces derniers sur le moteur de Unity (Shuriken)
-                        pour les particules et Shadergraph / Amplify pour les shaders.</h6>
+                        pour les particules et Shadergraph / Amplify pour les shaders.
+                    </h6>
                 </div>
                 <div class="col s2 left-align ">
                     <h6 class=" black-text  flow-text">
@@ -347,11 +344,11 @@
                         pour les particules et Shadergraph / Amplify pour les shaders.</h6>
                 </div>
                 <div class="col s2 left-align ">
-                    <h6 class=" black-text  flow-text">En plus des projets, je me suis pris d'intérêt
-                        pour les
-                        VFX. Je
+                    <h6 class=" black-text  flow-text">
+                        En plus des projets, je me suis pris d'intérêt pour les VFX. Je
                         produit principalement ces derniers sur le moteur de Unity (Shuriken)
-                        pour les particules et Shadergraph/Amplify pour les shaders.</h6>
+                        pour les particules et Shadergraph / Amplify pour les shaders.
+                    </h6>
                 </div>
                 <div class="col s2 left-align ">
                     <h6 class=" black-text  flow-text">
@@ -360,11 +357,11 @@
                         pour les particules et Shadergraph/Amplify pour les shaders.</h6>
                 </div>
                 <div class="col s2 left-align ">
-                    <h6 class=" black-text  flow-text ">En plus des projets, je me suis pris d'intérêt
-                        pour les
-                        VFX. Je
+                    <h6 class=" black-text  flow-text ">
+                        En plus des projets, je me suis pris d'intérêt pour les VFX. Je
                         produit principalement ces derniers sur le moteur de Unity (Shuriken)
-                        pour les particules et Shadergraph/Amplify pour les shaders.</h6>
+                        pour les particules et Shadergraph / Amplify pour les shaders.
+                    </h6>
                 </div>
                 &nbsp;
             </div>

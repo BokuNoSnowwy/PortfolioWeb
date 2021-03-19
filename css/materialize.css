@@ -662,7 +662,7 @@
 }
 
 .blue.lighten-5 {
-  background-color: #E3F2FD !important;
+  background-color: #53b7ff !important;
 }
 
 .blue-text.text-lighten-5 {
@@ -3462,12 +3462,6 @@ table span.badge {
   .container {
     width: 70%;
   }
-}
-
-.containerOther {
-  margin: 0 auto;
-  max-width: 3000px;
-  width: 90%;
 }
 
 

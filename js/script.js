@@ -1,3 +1,7 @@
+
+
+var carouselOn = true;
+
 // CAROUSEL
 $(document).ready(function () {
     $('.carousel').carousel(
@@ -36,7 +40,52 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
   });
 
-  
 $(document).ready(function(){
-$('.collapsible').collapsible();
+    $('.sidenav').sidenav();
 });
+
+$(document).ready(function(){
+    $('')
+});
+
+$(document).ready(function(){
+    $('.collapsible').collapsible({
+        accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+      });
+      
+      $('.collapsible .collapsible-header').on('click', function(event) {
+          var target = $(this);
+          setTimeout(function() {
+            if( target.length ) {
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: target.offset().top
+              }, 500);
+            }
+          }, 300);
+      });
+});
+
+function doSomethingOnClick (id){
+    //var carousel = document.getElementById("carouselPortfolio");
+    // This will disable just the div
+
+    var nodes = document.getElementById("carouselPortfolio").getElementsByTagName('*');
+    
+    console.log(id);
+    id.hidden = true;
+    /*
+    if(carouselOn){
+        
+        for(var i = 0; i < nodes.length; i++){
+            nodes[i].hidden = true;
+         
+        }
+    }else{
+        for(var i = 0; i < nodes.length; i++){
+            nodes[i].hidden = false;
+            
+        }
+    }
+    id.hidden = false;*/
+}
